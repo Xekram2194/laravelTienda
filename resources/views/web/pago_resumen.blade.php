@@ -68,7 +68,7 @@
                 <p><strong>Teléfono de contacto:</strong> {{session('venta')['telefono']}}</p>
                 <p><strong>Forma de envío:</strong> {{Util::formaEnvio(session('venta')['envio'])}}</p>
                 <p><strong>Dirección de entrega:</strong> {{session('venta')['direccion']}}</p>
-                <p><strong>Forma de pago:</strong> {{Util::formaPago(session('venta')['pago'])}}</p>
+                <p><strong>Forma de pago:</strong> {{Util::getFormaPago(session('venta')['pago'])}}</p>
                 <hr class="my-3 text-muted">
                 <!-- Totales -->
                 <div class="card mb-5 bg-light border-0">
